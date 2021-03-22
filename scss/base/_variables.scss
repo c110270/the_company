@@ -1,0 +1,94 @@
+/*======================================
+フォント
+======================================*/
+// フォントサイズ
+$font-size-base: 16px;
+
+// フォントファミリー
+$font-family-base: 'Indie Flower', cursive,'游ゴシック体', sans-serif;
+
+/*======================================
+カラー
+======================================*/
+// カラー
+$color-base:#3F51B5;
+$color-accent: #E81919;
+$color-th: #FFFFFF;
+$color-radio: #3F51B5;
+
+// バックグラウンド
+$color-bg-base: #EFEFEF;
+$color-bg-sub: #FFFFFF;
+$color-bg-table: #adadad;
+$color-bg-footerTop: #666666;
+$color-bg-footerBottom: #333333;
+$color-bg-footerRoundL: #55ACEE;
+$color-bg-footerRoundC: #3B5998;
+$color-bg-footerRoundR: #D93177;
+$color-bg-modal: #000000;
+
+// シャドウ
+$color-shadow-base: #919191;
+
+// リンク
+$color-link-base: #FFFFFF;
+
+// タイトル
+$color-title-base: #333333;
+$color-title-sub: #707070;
+
+// テキスト
+$color-text-base: #6F7579;
+$color-text-sub: #707070;
+$color-text-checkbox: #333333;
+
+// ラベル
+$color-label: #666666;
+$color-label02: #3F51B5;
+$color-label03: #E81919;
+
+// ボーダー
+$color-border-base: #707070;
+
+/*======================================
+レイアウト幅
+======================================*/
+$ly-width-canvas: 1280px;
+$ly-width-inner: 1200px;
+
+/*======================================
+余白
+======================================*/
+$padding-pc: 40px;
+$padding-tab: 24px;
+$padding-sp: 16px;
+
+/*======================================
+ブレイクポイント
+======================================*/
+//マップ型変数breakpointsを定義
+$breakpoints: (
+//キー値
+'sp': 'screen and (max-width: 767px)',
+'tab-only': 'screen and (min-width: 768px) and (max-width: #{$ly-width-inner + $padding-tab * 2 - 1px})',
+ 'tab': 'screen and (max-width: #{$ly-width-inner + $padding-tab * 2 - 1px})',
+ 'pc': 'screen and (min-width: 1200px)'
+) !default;
+
+/*======================================
+階層(z-index)
+======================================*/
+$layer: (
+	modal: 100, // モダール
+	drawer: 40, // ドロワー
+	floating: 30, // フローティングアイテム
+	pageTop:25,
+	header: 20, // ヘッダー
+	footer: 10, // フッター
+	default: 1,
+);
+
+/*======================================
+フォーム
+======================================*/
+$form-width-text: 520px;

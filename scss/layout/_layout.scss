@@ -1,0 +1,114 @@
+@import '../base/variables';
+
+@import '../mixin/mixin';
+
+/*======================================
+共通
+======================================*/
+.ly_canvas{
+  max-width: $ly-width-canvas;
+}
+
+.ly_centered{
+  max-width: calc($ly-width-inner + $padding-pc * 2);
+  padding-left: $padding-pc;
+  padding-right: $padding-pc;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ly_cont{
+  max-width: calc($ly-width-inner + $padding-pc * 2);
+  padding-top: 100px;
+  padding-bottom: 120px;
+  padding-left: $padding-pc;
+  padding-right: $padding-pc;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include _mq(tab){
+    padding-top: 70px;
+    padding-bottom: 100px;
+    padding-left: $padding-tab;
+    padding-right: $padding-tab;
+  }
+
+  @include _mq(sp){
+    padding-left: $padding-sp;
+    padding-right: $padding-sp;
+  }
+}
+
+/*======================================
+header
+======================================*/
+
+.ly_header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $color-base;
+  max-width: $ly-width-canvas;
+  z-index: map-get($layer , header);
+
+  @include _mq(tab){
+    height: 100px;
+    }
+  
+  @include _mq(sp){
+    height: 60px;
+  }
+}
+
+  .ly_header_inner{
+    display: flex;
+    max-width: calc($ly-width-inner + $padding-pc * 2);
+    padding-left: $padding-pc;
+    padding-right: $padding-pc;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include _mq(tab){
+      padding-left: $padding-tab;
+      padding-right: $padding-tab;
+    }
+    @include _mq(sp){
+      padding-left: $padding-sp;
+      padding-right: $padding-sp;
+    }
+  }
+
+/*======================================
+main
+======================================*/
+.ly_main{
+  max-width: $ly-width-canvas;
+}
+
+/*======================================
+footer
+======================================*/
+.ly_footer{
+  background: -moz-linear-gradient(top, $color-bg-footerTop, $color-bg-footerBottom); 
+	background: -webkit-linear-gradient(top, $color-bg-footerTop, $color-bg-footerBottom); 
+  background: linear-gradient(to bottom, $color-bg-footerTop, $color-bg-footerBottom); 
+  max-width: $ly-width-canvas;
+}
+
+.ly_footer_inner{
+  max-width: calc($ly-width-inner + $padding-pc * 2);
+  padding-left: $padding-pc;
+  padding-right: $padding-pc;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include _mq(tab){
+    padding-left: $padding-tab;
+    padding-right: $padding-tab;
+  }
+  @include _mq(sp){
+    padding-left: $padding-sp;
+    padding-right: $padding-sp;
+  }
+}

@@ -1,0 +1,30 @@
+@import './variables';
+
+@import '../mixin/mixin';
+
+body{
+  font-size: $font-size-base;
+  font-family: $font-family-base;
+  color: $color-title-base;
+  padding-top: 100px;
+
+  &.open{
+    overflow: hidden;
+  }
+
+  @include _mq(sp){
+    padding-top: 60px;
+  }
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+a{
+  color: $color-link-base;
+}
+
+
+
